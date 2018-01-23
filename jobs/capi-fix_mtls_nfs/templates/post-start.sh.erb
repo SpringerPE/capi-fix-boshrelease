@@ -1,0 +1,21 @@
+#!/usr/bin/env bash
+
+set -ex
+export LANG="en_US.UTF-8"
+
+CC_JOB_DIR="/var/vcap/jobs/cloud_controller_ng"
+CONFIG_DIR="${CC_JOB_DIR}/config"
+CC_PACKAGE_DIR="/var/vcap/packages/cloud_controller_ng"
+CC_NGINX_PID=/var/vcap/sys/run/nginx_cc/nginx.pid
+
+FIX_CC_JOB_DIR="/var/vcap/jobs/capi_fix_nfs_mtls"
+FIX_CONFIG_DIR="${FIX_CC_JOB_DIR}/config"
+
+# Copy new new config files
+cp -av ${FIX_CONFIG_DIR}/*  ${CONFIG_DIR}/
+
+# Tell nginx to reload the config
+kill -s HUP $(cat ${CC_NGINX_PID})
+
+
+exit 0

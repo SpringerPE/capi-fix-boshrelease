@@ -1,0 +1,15 @@
+---
+packages: []
+jobs:
+- name: capi_fix_nfs_mtls
+  version: e17a500c257f84f6accafa5258486c816eecb4e4
+  fingerprint: e17a500c257f84f6accafa5258486c816eecb4e4
+  sha1: 79e6073fd367fa91ccbd65159287ce2a1901c589
+license:
+  version: dd2876e08d0816dd876506d44442c2e814724a1d
+  fingerprint: dd2876e08d0816dd876506d44442c2e814724a1d
+  sha1: b8442fdcb5b87f96667141b5947dfad692c14269
+commit_hash: '00000000'
+uncommitted_changes: false
+name: capi-fix-boshrelease
+version: '1'

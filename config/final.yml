@@ -1,0 +1,6 @@
+---
+blobstore:
+  provider: local
+  options:
+    blobstore_path: /tmp/capi-fix-boshrelease
+final_name: capi-fix-boshrelease

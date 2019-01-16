@@ -1,7 +1,7 @@
 # Add-on BOSH Release for capi-release (CF deployment)
 
-Add-on release which fixes https://github.com/cloudfoundry/cloud_controller_ng/issues/893
-and tells nginx_cc to reload its configuration.
+Add-on release which fixes https://github.com/cloudfoundry/cloud_controller_ng/issues/1107
+by patching the buggy ruby file.
 
 ## Usage
 

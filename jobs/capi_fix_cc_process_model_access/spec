@@ -1,0 +1,9 @@
+---
+name: capi_fix_cc_process_model_access
+
+templates:
+  fix_cc_process_model_access: bin/pre-start 
+
+packages: []
+
+properties: {}

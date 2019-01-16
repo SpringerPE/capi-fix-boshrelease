@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+# Fix issue described in https://github.com/cloudfoundry/cloud_controller_ng/issues/1107
+
+if [ -d /var/vcap/packages/cloud_controller_ng/cloud_controller_ng/app/access ]; then
+    sed -i 's/app\.space\.has_developer/app\.space\&\.has_developer/g' /var/vcap/packages/cloud_controller_ng/cloud_controller_ng/app/access/process_model_access.rb
+fi

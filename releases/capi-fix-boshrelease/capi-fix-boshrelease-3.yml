@@ -1,0 +1,15 @@
+---
+packages: []
+jobs:
+- name: capi_fix_cc_process_model_access
+  version: ae0a1990af501a7132e2d9d49dc10a7437f728ee
+  fingerprint: ae0a1990af501a7132e2d9d49dc10a7437f728ee
+  sha1: fb9db0110ef8c587dc25d6afbd65342c88e42a54
+license:
+  version: dd2876e08d0816dd876506d44442c2e814724a1d
+  fingerprint: dd2876e08d0816dd876506d44442c2e814724a1d
+  sha1: 93d0a46568a049c80d139e249213df5aabf4a083
+commit_hash: e858303f
+uncommitted_changes: true
+name: capi-fix-boshrelease
+version: '3'

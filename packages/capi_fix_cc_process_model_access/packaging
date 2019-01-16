@@ -1,0 +1,4 @@
+set -e
+
+# Fix issue described in https://github.com/cloudfoundry/cloud_controller_ng/issues/1107
+sed -i 's/app\.space\.has_developer/app\.space\&\.has_developer/g' ${BOSH_INSTALL_TARGET}/../cloud_controller_ng/cloud_controller_ng/app/access/process_model_access.rb
